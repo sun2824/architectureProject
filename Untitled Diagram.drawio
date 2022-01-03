@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-03T08:35:09.326Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="mO9cqE6N7YzeJT341Otp" version="16.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-03T08:37:15.856Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="jCC9LWa0qUPgmW9n9ukZ" version="16.1.2" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2005" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -9,24 +9,24 @@
         </mxCell>
         <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-3" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="60" y="260" as="sourcePoint" />
-            <mxPoint x="140" y="259.71" as="targetPoint" />
+            <mxPoint x="60" y="250.29" as="sourcePoint" />
+            <mxPoint x="140" y="249.99999999999997" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-5" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-20" y="230" width="60" height="60" as="geometry" />
+          <mxGeometry x="-20" y="230" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-6" value="Spring Cloud Gateway&lt;br&gt;+ Spring Security&lt;br&gt;주소 매핑,&lt;br&gt;predicates (필터 역할)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="160" y="210" width="140" height="100" as="geometry" />
         </mxCell>
         <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="320" y="260" as="sourcePoint" />
-            <mxPoint x="490" y="260" as="targetPoint" />
+            <mxPoint x="320" y="250" as="sourcePoint" />
+            <mxPoint x="490" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-9" value="특정 서비스로 라우팅" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="310" y="220" width="130" height="20" as="geometry" />
+          <mxGeometry x="335" y="220" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-10" value="Eureka Server&lt;br&gt;(서비스 관리 및 로드밸런싱)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="430" width="280" height="110" as="geometry" />
@@ -96,6 +96,24 @@
               <mxPoint x="750" y="320" />
               <mxPoint x="670" y="480" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-29" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="290" as="sourcePoint" />
+            <mxPoint x="320" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-30" value="서비스에서 응답" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-31" value="응답 받음" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="305" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-32" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="285" as="sourcePoint" />
+            <mxPoint x="60" y="285" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
