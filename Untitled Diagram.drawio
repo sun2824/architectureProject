@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-03T08:37:15.856Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="jCC9LWa0qUPgmW9n9ukZ" version="16.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-03T08:39:58.398Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="uiDoNOTLUwRufNFC3sXZ" version="16.1.2" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2005" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -115,6 +115,12 @@
             <mxPoint x="140" y="285" as="sourcePoint" />
             <mxPoint x="60" y="285" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-33" value="Vue.js&lt;br&gt;(Vue2)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Zy5jL_L1PlVuJN2Nwhqh-34" value="Spring Boot(Java 15)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
