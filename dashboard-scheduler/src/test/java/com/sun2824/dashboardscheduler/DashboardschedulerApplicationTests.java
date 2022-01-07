@@ -9,7 +9,6 @@ class DashboardschedulerApplicationTests {
 
     @Test
     void contextLoads() {
-        kafkaTest kafkaTest = new kafkaTest();
     }
 
 }
