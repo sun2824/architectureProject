@@ -1,3 +1,5 @@
+import axiosModule from "~/api/axios/axiosModule";
+
 const initialState = () => ({
     token: null,
     refToken: null,
@@ -13,16 +15,12 @@ const initialState = () => ({
 
     isTokenCheck: false, // 토큰 체크 유무
     tokenCheckInterval: "", // 토큰 유효성(1분?) 체크 인터벌 객체
-
-    showAlert: true,
 })
 
 export default {
     namespaced: true,
     state: initialState,
-    getters: {
-        getShowAlert: state => state.showAlert
-    },
+    getters: {},
     mutations: {
         updateState(state, payload) {
             // key 배열로 반환됨
@@ -32,9 +30,12 @@ export default {
         }
     },
     actions: {
-        test({commit}, payload){
-            console.log('test');
-            commit('updateState', payload);
+        async auth({commit}, payload){
+            axiosModule.requestLogin(payload).then(res => {
+                console.log(res);
+                commit('updateState', payload);
+            });
+            return true;
         }
     }
 }

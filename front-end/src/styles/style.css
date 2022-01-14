@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Jua";
+    src: url("./Jua-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LAB디지털";
+    src: url("./Lab-Digital.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.default-background {
+    background-color: #f1f7fa !important;
+}
+
+.gridTitle {
+    font-weight: bold;
+}
+
+.swal-title {
+    margin: 0px;
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+.swal-button--confirm {
+    /* background-color: #303c54; */
+}
+
+.v-list-item__content {
+    padding: 12px;
+}
+
+.v-list-item__action { /* avatarMenu 안 아이콘 , unionRule 셀렉박스 안  */
+    margin-left: 12px;
+    margin-right: 12px !important;
+}
+
+.custom-table .v-data-table-header tr:nth-child(1) {
+    /* background-color: #3c4b64 !important; */
+
+}
+
+.custom-table .v-data-table-header .theme--light.v-icon {
+    color: white !important;
+}
+
+.custom-table {
+    color: grey !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.custom-table tr.v-data-table__selected {
+    background-color: gray !important;
+    color: white;
+}
+
+.colum-under-deco {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.p-label { /* 사용여부 chip css*/
+    text-align: right;
+    width: 110px;
+    line-height: 1.4;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.p-label-default {
+    line-height: 1.4;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* 검색카드 css */
+.filter-card .row .col {
+    padding-top: 2px !important;
+    padding-bottom: 0;
+}
+
+.filter-card .row .col:last-child {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.filter-card .row:last-child .col {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.filter-card .row:last-child .col:last-child {
+    padding: 0;
+}
