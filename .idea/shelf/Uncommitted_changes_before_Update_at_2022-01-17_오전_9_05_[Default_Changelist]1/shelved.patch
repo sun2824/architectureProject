@@ -1,0 +1,108 @@
+Index: front-end/src/router/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import VueRouter from 'vue-router';\r\nimport BaseLayout from '~/layout/base/Index'\r\n\r\nconst accessCertification = async (to, from, next) => {\r\n    next()\r\n}\r\n\r\nfunction pages() {\r\n    return [\r\n        {\r\n            name: \"대시보드\",\r\n            path: \"dashboard\",\r\n            beforeEnter: accessCertification\r\n        }\r\n    ];\r\n}\r\n\r\nconst router = new VueRouter({\r\n    mode: \"history\",\r\n    routes: [\r\n        {\r\n            name: \"home\",\r\n            path: \"/\",\r\n            beforeEnter: accessCertification,\r\n            components: BaseLayout,\r\n            children: pages()\r\n        }\r\n    ]\r\n});\r\n\r\nexport default router
+===================================================================
+diff --git a/front-end/src/router/index.js b/front-end/src/router/index.js
+--- a/front-end/src/router/index.js	
++++ b/front-end/src/router/index.js	
+@@ -1,5 +1,6 @@
+ import VueRouter from 'vue-router';
+ import BaseLayout from '~/layout/base/Index'
++import AuthLayout from '~/layout/auth/Index'
+ 
+ const accessCertification = async (to, from, next) => {
+     next()
+@@ -24,6 +25,11 @@
+             beforeEnter: accessCertification,
+             components: BaseLayout,
+             children: pages()
++        },
++        {
++            name: "auth",
++            component: AuthLayout,
++            path: "/auth"
+         }
+     ]
+ });
+Index: front-end/src/layout/auth/Index.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/front-end/src/layout/auth/Index.vue b/front-end/src/layout/auth/Index.vue
+new file mode 100644
+--- /dev/null	
++++ b/front-end/src/layout/auth/Index.vue	
+@@ -0,0 +1,20 @@
++<template>
++  <v-app>
++    <auth-view />
++  </v-app>
++</template>
++
++<script>
++import AuthView from './View'
++
++export default {
++  name: "Index",
++  components:{
++    AuthView
++  }
++}
++</script>
++
++<style scoped>
++
++</style>
+\ No newline at end of file
+Index: front-end/src/views/auth/Login.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/front-end/src/views/auth/Login.vue b/front-end/src/views/auth/Login.vue
+new file mode 100644
+--- /dev/null	
++++ b/front-end/src/views/auth/Login.vue	
+@@ -0,0 +1,13 @@
++<template>
++
++</template>
++
++<script>
++export default {
++  name: "Index"
++}
++</script>
++
++<style scoped>
++
++</style>
+\ No newline at end of file
+Index: front-end/src/layout/auth/View.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/front-end/src/layout/auth/View.vue b/front-end/src/layout/auth/View.vue
+new file mode 100644
+--- /dev/null	
++++ b/front-end/src/layout/auth/View.vue	
+@@ -0,0 +1,15 @@
++<template>
++  <v-main>
++    <router-view />
++  </v-main>
++</template>
++
++<script>
++export default {
++  name: "AuthView"
++}
++</script>
++
++<style scoped>
++
++</style>
+\ No newline at end of file
