@@ -2,8 +2,10 @@ import AuthLayout from '~/layout/auth/Index'
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '~/views/Home'
+import Home from '~/layout/base/Index'
 import Login from '~/views/auth/Login'
+import Dashboard from "~/views/dashboard/Dashboard";
+import NotFound from '~/views/NotFound'
 
 Vue.use(VueRouter)
 
@@ -11,7 +13,8 @@ function homeChildren() {
     return [
         {
             name: "대시보드",
-            path: "dashboard"
+            path: "dashboard",
+            component: Dashboard
         }
     ];
 }
@@ -40,6 +43,10 @@ const router = new VueRouter({
             path: '/auth',
             component: AuthLayout,
             children: authChildren()
+        },
+        {
+            path: '*',
+            component: NotFound
         }
     ]
 })

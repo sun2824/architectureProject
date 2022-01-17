@@ -14,6 +14,8 @@ const initialState = () => ({
     isTokenCheck: false, // 토큰 체크 유무
     tokenCheckInterval: "", // 토큰 유효성(1분?) 체크 인터벌 객체
 
+    selectedMenu: {},
+
     showAlert: true,
 })
 
@@ -21,7 +23,8 @@ export default {
     namespaced: true,
     state: initialState,
     getters: {
-        getShowAlert: state => state.showAlert
+        getShowAlert: state => state.showAlert,
+        getSelectedMenu: state => state.selectedMenu
     },
     mutations: {
         updateState(state, payload) {
@@ -34,6 +37,9 @@ export default {
     actions: {
         test({commit}, payload){
             console.log('test');
+            commit('updateState', payload);
+        },
+        selectMenu({commit}, payload){
             commit('updateState', payload);
         }
     }

@@ -4,7 +4,8 @@ import createPersistedState from "vuex-persistedstate"
 
 import base from './base'
 import login from './auth/login'
-import token from './auth/token';
+import dashboard from "@/store/dashboard/dashboard"
+import token from './auth/token'
 
 Vue.use(Vuex)
 
@@ -12,6 +13,7 @@ const modules = {
     base,
     login,
     token,
+    dashboard,
 }
 
 const store = new Vuex.Store({
@@ -20,7 +22,7 @@ const store = new Vuex.Store({
         createPersistedState({
             paths: Object.keys(modules)
         })
-    ]
+    ],
 })
 
 export default store
