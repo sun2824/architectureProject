@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="frontend dashboard 개발 중">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/AgeCardLayout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/GenderCardLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dashboardService.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dashboardService.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dataService.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dataService.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_1.xml" afterDir="false" />
+    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/RealtimeAgeCardLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/DashboardschedulerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/DashboardschedulerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/smallCardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/SmallCardLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/SmallCardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/SmallCardLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +95,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27233306" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -274,7 +261,7 @@
       <workItem from="1642033217945" duration="1242000" />
       <workItem from="1642377936402" duration="24145000" />
       <workItem from="1642421713041" duration="1204000" />
-      <workItem from="1642423967535" duration="3363000" />
+      <workItem from="1642423967535" duration="5500000" />
     </task>
     <task id="LOCAL-00001" summary="dashboard-scheduler update">
       <created>1641528542634</created>
@@ -325,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642408962361</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="frontend dashboard 개발 중">
+      <created>1642429455887</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642429455887</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

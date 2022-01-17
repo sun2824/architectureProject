@@ -27,7 +27,7 @@ export default {
   },
   data(){
     return {
-      width: '90%',
+      width: '95%',
       lineOptions : {
         chart: {
           id: '',

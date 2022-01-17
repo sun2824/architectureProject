@@ -13,21 +13,21 @@
         </v-col>
         <v-col md="3">
           <small-card-layout
-              card-title="20대"
+              card-title="30대"
               today-cnt="12"
               :chart-data="thirtyChartData"
           ></small-card-layout>
         </v-col>
         <v-col md="3">
           <small-card-layout
-              card-title="20대"
+              card-title="40대"
               today-cnt="12"
               :chart-data="fortyChartData"
           ></small-card-layout>
         </v-col>
         <v-col md="3">
           <small-card-layout
-              card-title="20대"
+              card-title="50대"
               today-cnt="12"
               :chart-data="fiftyChartData"
           ></small-card-layout>
@@ -35,11 +35,11 @@
       </v-row>
       <v-row xs12>
         <v-col md="12">
-          <small-card-layout
-              card-title="20대"
+          <realtime-age-card-layout
+              card-title="실시간 연령대별 회원수"
               today-cnt="12"
               :chart-data="twentyChartData"
-          ></small-card-layout>
+          ></realtime-age-card-layout>
         </v-col>
       </v-row>
       <v-row xs12>
@@ -65,7 +65,8 @@
 <script>
 import SmallCardLayout from "@/layout/dashboard/card/SmallCardLayout"
 import AgeCardLayout from "@/layout/dashboard/card/AgeCardLayout"
-import GenderCardLayout from "@/layout/dashboard/card/GenderCardLayout";
+import GenderCardLayout from "@/layout/dashboard/card/GenderCardLayout"
+import RealtimeAgeCardLayout from "@/layout/dashboard/card/RealtimeAgeCardLayout";
 
 import {mapState} from "vuex"
 
@@ -74,7 +75,8 @@ export default {
   components: {
     SmallCardLayout,
     AgeCardLayout,
-    GenderCardLayout
+    GenderCardLayout,
+    RealtimeAgeCardLayout
   },
   mounted() {
   },

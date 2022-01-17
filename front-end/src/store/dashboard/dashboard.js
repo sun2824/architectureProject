@@ -1,5 +1,6 @@
 const initialState = () => ({
     isSmallCardMounted: true,
+    isRealtimeAgeMounted: true,
     twentyChartData: [],
     thirtyChartData: [],
     fortyChartData: [],
@@ -10,7 +11,8 @@ export default {
     namespaced: true,
     state: initialState,
     getters: {
-        getIsSmallCardMounted: state => state.isSmallCardMounted
+        getIsSmallCardMounted: state => state.isSmallCardMounted,
+        getIsRealtimeAgeMounted: state => state.isRealtimeAgeMounted
     },
     mutations: {
         updateState(state, payload) {
