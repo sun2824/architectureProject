@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/RealtimeAgeCardLayout.vue" afterDir="false" />
+    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="frontend dashboard 개발 중">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/SmallCardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/SmallCardLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/DataSourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/DataSourceProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/QuerydslJpaQueryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/QuerydslJpaQueryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/service/LoadUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/test/java/com/sun2824/dashboardscheduler/DashboardschedulerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/test/java/com/sun2824/dashboardscheduler/DashboardschedulerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +113,9 @@
       <recent name="C:\Users\infinigru\Desktop\architectureProject\dashboard-scheduler\src\main\java\com\sun2824\dashboardscheduler" />
       <recent name="C:\Users\infinigru\Desktop\architectureProject\front-end\src\layout\dashboard" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sun2824.dashboardscheduler.domain.common" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -115,7 +124,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.dashboard-scheduler [dependencies]">
+  <component name="RunManager" selected="Gradle.DashboardschedulerApplicationTests.contextLoads">
+    <configuration name="DashboardschedulerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sun2824.dashboardscheduler.DashboardschedulerApplication" />
+      <module name="dashboardscheduler.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sun2824.dashboardscheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -129,18 +151,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashboardschedulerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sun2824.dashboardscheduler.DashboardschedulerApplication" />
-      <module name="dashboardscheduler.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sun2824.dashboardscheduler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="DashboardschedulerApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/dashboard-scheduler" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.sun2824.dashboardscheduler.DashboardschedulerApplicationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="DashboardschedulerApplicationTests.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -159,6 +189,27 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="dashboard-scheduler [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/dashboard-scheduler" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileQuerydsl" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -184,41 +235,9 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="gatewayserver" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gatewayserver" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="DashboardschedulerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dashboardscheduler.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sun2824.dashboardscheduler.DashboardschedulerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DashboardserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="dashboardService.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sun2824.dashboardservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sun2824.dashboardservice.DashboardserviceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,13 +249,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekamanagementserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eurekamanagementserver.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sun2824.eurekamanagementserver.EurekamanagementserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.dashboard-scheduler [dependencies]" />
-        <item itemvalue="Application.DashboardschedulerApplication" />
         <item itemvalue="Gradle.DashboardschedulerApplicationTests.contextLoads" />
-        <item itemvalue="Gradle.gatewayserver" />
-        <item itemvalue="Spring Boot.DashboardserviceApplication" />
+        <item itemvalue="Gradle.DashboardschedulerApplicationTests" />
+        <item itemvalue="Gradle.dashboard-scheduler [dependencies]" />
+        <item itemvalue="Gradle.dashboard-scheduler [compileQuerydsl]" />
+        <item itemvalue="Application.DashboardschedulerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +288,7 @@
       <workItem from="1642377936402" duration="24145000" />
       <workItem from="1642421713041" duration="1204000" />
       <workItem from="1642423967535" duration="5500000" />
+      <workItem from="1642464805942" duration="2527000" />
     </task>
     <task id="LOCAL-00001" summary="dashboard-scheduler update">
       <created>1641528542634</created>

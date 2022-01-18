@@ -39,6 +39,7 @@ dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.32'
     testImplementation 'ch.qos.logback:logback-classic:1.2.10'
     //querydsl 추가
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
     implementation 'com.querydsl:querydsl-core:5.0.0'
     implementation 'com.querydsl:querydsl-jpa:5.0.0'
     implementation 'org.apache.kafka:kafka-streams'

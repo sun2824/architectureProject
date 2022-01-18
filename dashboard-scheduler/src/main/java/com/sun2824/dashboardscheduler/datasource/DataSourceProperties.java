@@ -18,7 +18,7 @@ public class DataSourceProperties {
     @Bean(name = "commonDataSource")
     @Qualifier("commonDataSource")
     @Primary
-    @ConfigurationProperties(prefix = "spring.datasource.hikari.allviews")
+    @ConfigurationProperties(prefix = "spring.datasource.hikari.common")
     public DataSource allviewsDataSource(){
         return DataSourceBuilder.create().type(HikariDataSource.class).build();
     }

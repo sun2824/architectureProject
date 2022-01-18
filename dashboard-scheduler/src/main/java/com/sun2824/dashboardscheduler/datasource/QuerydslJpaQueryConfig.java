@@ -10,10 +10,10 @@ import javax.persistence.PersistenceContext;
 @Configuration
 public class QuerydslJpaQueryConfig {
 
-    @PersistenceContext(unitName = "allviewsEntityManagerFactory")
+    @PersistenceContext(unitName = "commonEntityManagerFactory")
     private EntityManager em;
 
-    @Bean(name = "allviewsJPAQueryFactory")
+    @Bean(name = "commonJPAQueryFactory")
     public JPAQueryFactory queryFactory() {
         return new JPAQueryFactory(em);
     }
