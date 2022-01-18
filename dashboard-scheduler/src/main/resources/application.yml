@@ -40,3 +40,5 @@ spring:
       hibernate:
         implicit_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
         physical_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+topicName: dashboardDatas

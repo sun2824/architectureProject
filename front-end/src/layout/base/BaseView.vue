@@ -1,7 +1,7 @@
 <template>
-  <v-main>
+  <v-main class="default-background-color">
       <v-fade-transition mode="out-in">
-        <router-view/>
+        <router-view class="default-background-color"/>
       </v-fade-transition>
   </v-main>
 </template>
@@ -17,5 +17,9 @@ export default {
   padding-top: 45px !important;
   padding-left: 145px !important;
   padding-right: 1% !important;
+}
+
+.default-background-color{
+  background-color:#f0f1fa !important;
 }
 </style>

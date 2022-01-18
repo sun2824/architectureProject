@@ -4,18 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="frontend dashboard 개발 중">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="jpa  테스트">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/dashboard-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard-service/src/main/java/com/sun2824/dashboardservice/kafka/KafkaListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/DataSourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/DataSourceProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/QuerydslJpaQueryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/datasource/QuerydslJpaQueryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/service/LoadUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/test/java/com/sun2824/dashboardscheduler/DashboardschedulerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/test/java/com/sun2824/dashboardscheduler/DashboardschedulerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/test/java/com/sun2824/dashboardscheduler/kafkaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/test/java/com/sun2824/dashboardscheduler/kafkaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/7.3.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/build/classes/java/main/com/sun2824/dashboardservice/DashboardserviceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/build/classes/java/test/com/sun2824/dashboardservice/DashboardserviceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboardService/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layout/base/BaseView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/base/BaseView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layout/base/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/base/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/AgeCardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/AgeCardLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/GenderCardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/GenderCardLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/SmallCardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/layout/dashboard/card/SmallCardLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +74,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/dashboard-scheduler">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/dashboard-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/dashboardService">
@@ -60,9 +110,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,7 +142,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front-end" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -134,19 +184,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -288,7 +325,8 @@
       <workItem from="1642377936402" duration="24145000" />
       <workItem from="1642421713041" duration="1204000" />
       <workItem from="1642423967535" duration="5500000" />
-      <workItem from="1642464805942" duration="2527000" />
+      <workItem from="1642464805942" duration="11639000" />
+      <workItem from="1642481775074" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="dashboard-scheduler update">
       <created>1641528542634</created>
@@ -346,7 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642429455887</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="jpa  테스트">
+      <created>1642467400126</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642467400126</updated>
+    </task>
+    <task id="LOCAL-00010" summary="jpa  테스트">
+      <created>1642467574729</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642467574729</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +423,7 @@
     <MESSAGE value="vue-router 추가" />
     <MESSAGE value="webpack alias 중간저장" />
     <MESSAGE value="frontend dashboard 개발 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend dashboard 개발 중" />
+    <MESSAGE value="jpa  테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="jpa  테스트" />
   </component>
 </project>

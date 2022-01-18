@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background-color:#f0f1fa !important;">
     <app-bar></app-bar>
     <side-bar class="elevation-10"></side-bar>
     <v-main id="mainBody">

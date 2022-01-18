@@ -9,7 +9,7 @@ import java.util.UUID;
 @Service
 public class kafkaTest {
 
-    @KafkaListener(topics = "kms-topic" , groupId = "test")
+    @KafkaListener(topics = "dashboardData" , groupId = "test")
     public void consume(String message) throws IOException {
         System.out.println(message);
     }

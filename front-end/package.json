@@ -32,7 +32,10 @@
     "vuetify": "^2.5.0",
     "vuetify-loader": "^1.7.0",
     "vuex": "^3.6.2",
-    "vuex-persistedstate": "^4.0.0-beta.3"
+    "vuex-persistedstate": "^4.0.0-beta.3",
+    "sockjs": "^0.3.21",
+    "sockjs-client": "^1.5.1",
+    "webstomp-client": "^1.2.6"
   },
   "eslintConfig": {
     "root": true,
