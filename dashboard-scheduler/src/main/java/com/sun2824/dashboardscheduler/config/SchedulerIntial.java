@@ -18,7 +18,9 @@ public class SchedulerIntial {
     @PostConstruct
     void start(){
         try{
-            scheduler.scheduleJob(buildJobTrigger("dashboardScheduler", "10 * * * * ?"));
+            scheduler.scheduleJob(buildJobDetail(), buildJobTrigger("dashboardScheduler", "0/10 * * * * ?"));
+
+            scheduler.start();
         }catch (Exception e){
             System.out.println(e.getMessage());
         }

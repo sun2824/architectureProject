@@ -17,7 +17,7 @@ const modules = {
 }
 
 const store = new Vuex.Store({
-    modules,
+    modules: modules,
     plugins: [
         createPersistedState({
             paths: Object.keys(modules)

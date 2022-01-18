@@ -6,6 +6,7 @@ import com.sun2824.dashboardscheduler.kafka.KafkaProducer;
 import com.sun2824.dashboardscheduler.repository.common.DashboardDataRepository;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 import org.springframework.stereotype.Component;
 
@@ -16,8 +17,10 @@ import java.util.Map;
 @Component
 public class SendDashboardDataJob extends QuartzJobBean {
 
+    @Autowired
     private KafkaProducer kafkaProducer;
 
+    @Autowired
     private DashboardDataRepository dashboardDataRepository;
 
     @Override

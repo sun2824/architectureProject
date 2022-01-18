@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DashboardController {
     @Autowired
     private SimpMessageSendingOperations messagingTemplate;
+
     private KafkaQueue kafkaQueue;
 
     @PostMapping("getDashboardDatas")

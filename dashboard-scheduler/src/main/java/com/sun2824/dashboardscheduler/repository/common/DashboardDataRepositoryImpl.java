@@ -40,7 +40,7 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
 
         for (int i = 2; i <= 5; i++) {
             JsonArray customerInfoList = new JsonArray();
-            for (int j = 7; j < 0; j++) {
+            for (int j = 7; j > 0; j--) {
                 Calendar calendar = Calendar.getInstance();
 
                 calendar.setTime(new Date());
@@ -79,7 +79,7 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
                         qCustomerInfo.count().as("cnt")
                 ))
                 .from(qCustomerInfo)
-                .where(Expressions.stringTemplate("DATE_FORMAT({0}, '%Y-%m-%d'))", qCustomerInfo.createdAt).eq(Expressions.stringTemplate("DATE_FORMAT(NOW(), '%Y-%m-%d'))")))
+                .where(Expressions.stringTemplate("DATE_FORMAT({0}, '%Y-%m-%d')", qCustomerInfo.createdAt).eq(Expressions.stringTemplate("DATE_FORMAT(NOW(), '%Y-%m-%d')")))
                 .groupBy(qCustomerInfo.grade)
                 .fetch()) {
             JsonObject jsonObject = new JsonObject();
@@ -133,7 +133,7 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
                     .from(qPurchaseTable)
                     .innerJoin(qCustomerInfo).on(qCustomerInfo.customerId.eq(qPurchaseTable.customerId))
                     .where(
-                            Expressions.stringTemplate("DATE_FORMAT({0}, '%Y-%m-%d'))", qPurchaseTable.createdAt).eq(Expressions.stringTemplate("DATE_FORMAT(NOW(), '%Y-%m-%d'))")),
+                            Expressions.stringTemplate("DATE_FORMAT({0}, '%Y-%m-%d')", qPurchaseTable.createdAt).eq(Expressions.stringTemplate("DATE_FORMAT(NOW(), '%Y-%m-%d')")),
                             qCustomerInfo.grade.eq(str)
                     )
                     .groupBy( new CaseBuilder()

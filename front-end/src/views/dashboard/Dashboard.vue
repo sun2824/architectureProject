@@ -91,8 +91,26 @@ export default {
   },
   mounted() {
 
+    let socketJs = new SockJs(process.env.VUE_APP_DASHBOARD_REQUEST_URL+'/ws'), stompClient = Stomp.over(socketJs);
+    let isStompClient = typeof(this.$stompClient) === undefined ? null : this.$stompClient;
+
+    if(isStompClient === undefined || isStompClient === null || !isStompClient.connected){
+      stompClient.connect(
+          {id: 'dashboardDatas', host: 'dashboardDatas'},
+          frame => {
+            Vue.prototype.$stompClient = stompClient;
+
+            this.$store.dispatch("dashboard/getDashboardDatas", stompClient);
+
+            frame;
+          }
+      )
+    }else{
+      this.$store.dispatch("dashboard/getDashboardDatas", stompClient);
+    }
+
     setInterval( () => {
-      let socketJs = new SockJs(process.env.DASHBOARD_REQUEST_URL+'/ws'), stompClient = Stomp.over(socketJs);
+      let socketJs = new SockJs(process.env.VUE_APP_DASHBOARD_REQUEST_URL+'/ws'), stompClient = Stomp.over(socketJs);
       let isStompClient = typeof(this.$stompClient) === undefined ? null : this.$stompClient;
 
       if(isStompClient === undefined || isStompClient === null || !isStompClient.connected){
@@ -101,7 +119,7 @@ export default {
             frame => {
               Vue.prototype.$stompClient = stompClient;
 
-              this.$store.dispatch("/dashboard/getDashboardDatas", stompClient);
+              this.$store.dispatch("dashboard/getDashboardDatas", stompClient);
 
               frame;
             }

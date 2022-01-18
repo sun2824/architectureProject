@@ -27,15 +27,11 @@ export default {
         }
     },
     actions: {
-        test({commit}, payload) {
-            console.log('test');
-            commit('updateState', payload);
-        },
-        selectMenu({commit}, payload) {
-            commit('updateState', payload);
-        },
-        getDashboardDatas({commit}, payload) {
+        async getDashboardDatas({commit}, payload) {
             let stompClient = payload;
+
+            console.log('getDashboardDatas')
+
             stompClient.subscribe('/topic/dashboardDatas',
                 res => {
                     let data = JSON.parse(res.body);
