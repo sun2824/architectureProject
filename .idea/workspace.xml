@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="jpa  테스트">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/config/SchedulerIntial.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/config/SchedulerIntial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/job/SendDashboardDataJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/job/SendDashboardDataJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/repository/common/DashboardDataRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-scheduler/src/main/java/com/sun2824/dashboardscheduler/repository/common/DashboardDataRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-service/src/main/java/com/sun2824/dashboardservice/DashboardserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-service/src/main/java/com/sun2824/dashboardservice/DashboardserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-service/src/main/java/com/sun2824/dashboardservice/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-service/src/main/java/com/sun2824/dashboardservice/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard-service/src/main/java/com/sun2824/dashboardservice/kafka/KafkaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard-service/src/main/java/com/sun2824/dashboardservice/kafka/KafkaListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/.env.run_local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/views/dashboard/Dashboard.vue" afterDir="false" />
-    </list>
+    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="jpa  테스트" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ads-console/ads-console-vue-frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/eureka-management-server" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -276,6 +260,7 @@
       <workItem from="1642504640149" duration="4975000" />
       <workItem from="1642510805070" duration="324000" />
       <workItem from="1642511177161" duration="1863000" />
+      <workItem from="1642574369981" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="dashboard-scheduler update">
       <created>1641528542634</created>

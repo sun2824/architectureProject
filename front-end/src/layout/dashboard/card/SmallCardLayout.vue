@@ -11,7 +11,7 @@
     <apexchart class="small-chart-margin"
         v-if="isSmallCardMounted"
         type="line"
-        :width="width" height="54%" :options="lineOptions" :series="series"></apexchart>
+        :width="width" height="54%" :options="chartLineOptions" :series="chartSeries"></apexchart>
   </v-card>
 </template>
 
@@ -25,49 +25,21 @@ export default {
     },
     todayCnt: {
       type: String
+    },
+    chartSeries: {
+      type: Array
+    },
+    chartLineOptions: {
+      type: Object
     }
   },
   data(){
     return {
       width: '95%',
-      lineOptions : {
-        chart: {
-          id: '',
-          group: 'sparklines',
-          type: 'area',
-          sparkline: {
-            enabled: true
-          },
-          animations: {
-            enabled: true,
-            easing: 'linear',
-            dynamicAnimation: {
-              speed: 1000
-            }
-          }
-        },
-        stroke: {
-          curve: 'smooth'
-        },
-        fill: {
-          opacity: 1,
-        },
-        xaxis: {
-          categories: [
-            "01 Jan",
-            "02 Jan",
-            "03 Jan",
-            "04 Jan",
-            "05 Jan",
-            "06 Jan",
-            "07 Jan"
-          ]
-        }
-      },
       series: [
         {
-          name: "Series 1",
-          data: [45, 52, 38, 45, 19, 23, 2]
+          name: "회원 수",
+          data: this.chartData
         }
       ],
     }

@@ -2,6 +2,7 @@ package com.sun2824.dashboardscheduler.repository.common;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.querydsl.core.types.ConstantImpl;
 import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.CaseBuilder;
 import com.querydsl.core.types.dsl.Expressions;
@@ -40,27 +41,33 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
 
         for (int i = 2; i <= 5; i++) {
             JsonArray customerInfoList = new JsonArray();
-            for (int j = 7; j > 0; j--) {
-                Calendar calendar = Calendar.getInstance();
-
-                calendar.setTime(new Date());
-
-                calendar.add(Calendar.DATE, -j);
+            for (int j = 6; j > -1; j--) {
 
                 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
-                long customerCnt = queryFactory.select()
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTime(new Date());
+                calendar.add(Calendar.DATE, -j);
+                String firstDate = format.format(calendar.getTime());
+                calendar.add(Calendar.DATE, -1);
+                String secondDate = format.format(calendar.getTime());
+
+                long customerCnt = queryFactory.select(
+                        qCustomerInfo.customerId
+                )
                         .from(qCustomerInfo)
                         .where(
-                                qCustomerInfo.createdAt.between(Expressions.stringTemplate("DATE_SUB(NOW(), INTERVAL {0} DAY)", j), Expressions.stringTemplate("DATE_SUB(NOW(), INTERVAL {0} DAY)", (j - 1))),
-                                Expressions.stringTemplate("FLOOR({0}/10) * 10", qCustomerInfo.age).eq(Expressions.stringTemplate("FLOOR({0}/10) * 10", i))
+                                Expressions.stringTemplate("DATE_FORMAT({0}, {1})", qCustomerInfo.createdAt, ConstantImpl.create("%Y-%m-%d")).between(
+                                        secondDate,
+                                        firstDate),
+                                Expressions.stringTemplate("FLOOR({0}/10) * 10", qCustomerInfo.age).eq(Expressions.stringTemplate("FLOOR({0}/10) * 10", i*10))
                         )
                         /*.groupBy(Expressions.stringTemplate("FLOOR({0}/10) * 10", qCustomerInfo.age).eq(Expressions.stringTemplate("FLOOR({0}/10) * 10", i)))*/
                         .fetchCount();
 
                 JsonObject jsonObject = new JsonObject();
 
-                jsonObject.addProperty(format.format(calendar.getTime()), customerCnt);
+                jsonObject.addProperty(firstDate, customerCnt);
 
                 customerInfoList.add(jsonObject);
             }
@@ -72,6 +79,8 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
 
     @Override
     public JsonArray dailyCustomerGrade() {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
         JsonArray jsonArray = new JsonArray();
         for (CustomerInfoDTO customerInfoDTO : queryFactory
                 .select(Projections.bean(CustomerInfoDTO.class,
@@ -79,7 +88,7 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
                         qCustomerInfo.count().as("cnt")
                 ))
                 .from(qCustomerInfo)
-                .where(Expressions.stringTemplate("DATE_FORMAT({0}, '%Y-%m-%d')", qCustomerInfo.createdAt).eq(Expressions.stringTemplate("DATE_FORMAT(NOW(), '%Y-%m-%d')")))
+                .where(Expressions.stringTemplate("DATE_FORMAT({0}, {1})", qCustomerInfo.createdAt, ConstantImpl.create("%Y-%m-%d")).eq(format.format(new Date())))
                 .groupBy(qCustomerInfo.grade)
                 .fetch()) {
             JsonObject jsonObject = new JsonObject();
@@ -99,6 +108,10 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
 
         JsonArray jsonArrayTotal = new JsonArray();
 
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
+        String now = format.format(new Date());
+
         for (String str : strList) {
 
             JsonObject jsonObject = new JsonObject();
@@ -107,8 +120,36 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
 
             List<PurchaseTableDTO> purchaseTableDTOList =
                     queryFactory
-                    .select(Projections.bean(PurchaseTableDTO.class,
-                            new CaseBuilder()
+                            .select(Projections.bean(PurchaseTableDTO.class,
+                                    new CaseBuilder()
+                                            .when(
+                                                    qPurchaseTable.price.between(1000000, 2000000)
+                                            ).then("1")
+                                            .when(
+                                                    qPurchaseTable.price.between(2000001, 3000000)
+                                            ).then("2")
+                                            .when(
+                                                    qPurchaseTable.price.between(3000001, 5000000)
+                                            ).then("3")
+                                            .when(
+                                                    qPurchaseTable.price.between(5000001, 7000000)
+                                            ).then("4")
+                                            .when(
+                                                    qPurchaseTable.price.gt(9999999)
+                                            ).then("5")
+                                            .otherwise("0").as("priceGroup"),
+                                    qPurchaseTable.customerId,
+                                    qCustomerInfo.grade,
+                                    qPurchaseTable.uuid,
+                                    qPurchaseTable.count().as("cnt")
+                            ))
+                            .from(qPurchaseTable)
+                            .innerJoin(qCustomerInfo).on(qCustomerInfo.customerId.eq(qPurchaseTable.customerId))
+                            .where(
+                                    Expressions.stringTemplate("DATE_FORMAT({0}, {1})", qCustomerInfo.createdAt, ConstantImpl.create("%Y-%m-%d")).eq(now),
+                                    qCustomerInfo.grade.eq(str)
+                            )
+                            .groupBy(new CaseBuilder()
                                     .when(
                                             qPurchaseTable.price.between(1000000, 2000000)
                                     ).then("1")
@@ -124,38 +165,10 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
                                     .when(
                                             qPurchaseTable.price.gt(9999999)
                                     ).then("5")
-                                    .otherwise("0").as("priceGroup"),
-                            qPurchaseTable.customerId,
-                            qCustomerInfo.grade,
-                            qPurchaseTable.uuid,
-                            qPurchaseTable.count().as("cnt")
-                    ))
-                    .from(qPurchaseTable)
-                    .innerJoin(qCustomerInfo).on(qCustomerInfo.customerId.eq(qPurchaseTable.customerId))
-                    .where(
-                            Expressions.stringTemplate("DATE_FORMAT({0}, '%Y-%m-%d')", qPurchaseTable.createdAt).eq(Expressions.stringTemplate("DATE_FORMAT(NOW(), '%Y-%m-%d')")),
-                            qCustomerInfo.grade.eq(str)
-                    )
-                    .groupBy( new CaseBuilder()
-                            .when(
-                                    qPurchaseTable.price.between(1000000, 2000000)
-                            ).then("1")
-                            .when(
-                                    qPurchaseTable.price.between(2000001, 3000000)
-                            ).then("2")
-                            .when(
-                                    qPurchaseTable.price.between(3000001, 5000000)
-                            ).then("3")
-                            .when(
-                                    qPurchaseTable.price.between(5000001, 7000000)
-                            ).then("4")
-                            .when(
-                                    qPurchaseTable.price.gt(9999999)
-                            ).then("5")
-                            .otherwise("0"))
-                    .fetch();
+                                    .otherwise("0"))
+                            .fetch();
 
-            for(PurchaseTableDTO purchaseTableDTO : purchaseTableDTOList){
+            for (PurchaseTableDTO purchaseTableDTO : purchaseTableDTOList) {
                 JsonObject jsonObjectTemp = new JsonObject();
 
                 jsonObjectTemp.addProperty("cnt", purchaseTableDTO.getCnt());
