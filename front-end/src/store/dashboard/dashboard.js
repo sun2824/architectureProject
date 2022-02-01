@@ -3,14 +3,10 @@ const initialState = () => ({
     isGradeDataMounted: true,
     isRealtimeAgeMounted: true,
     isGradeCostDataMounted: true,
-    twentyLineOptions: [],
-    thirtyLineOptions: [],
-    twentySeries: [],
-    thirtySeries: [],
-    fortySeries: [],
-    fiftySeries: [],
-    fiftyLineOptions: [],
-    fortyLineOptions: []
+    twentyChartData: [],
+    thirtyChartData: [],
+    fortyChartData: [],
+    fiftyChartData: [],
 })
 
 function weeklyCustomerCnt(commit, data) {
@@ -221,6 +217,8 @@ export default {
         async getDashboardDatas({commit}, payload) {
             let stompClient = payload;
 
+            console.log('getDashboardDatas')
+
             stompClient.subscribe('/topic/dashboardDatas',
                 res => {
                     let data = JSON.parse(res.body);
@@ -229,7 +227,7 @@ export default {
 
                     payload.pageUrl = '/dashboard';
 
-                    weeklyCustomerCnt(commit, data[0]);
+                    console.log(data);
 
                     commit;
                 }

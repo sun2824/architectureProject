@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="jpa  테스트" />
+    <list default="true" id="bf73e915-29d1-4603-a641-b87f83360fcc" name="Default Changelist" comment="jpa  테스트">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17__9_05__Default_Changelist_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-01-17_오전_9_05_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/dashboard/dashboard.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +88,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/eureka-management-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dashboard-scheduler" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -92,7 +97,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27233306" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -260,7 +265,10 @@
       <workItem from="1642504640149" duration="4975000" />
       <workItem from="1642510805070" duration="324000" />
       <workItem from="1642511177161" duration="1863000" />
-      <workItem from="1642574369981" duration="8000" />
+      <workItem from="1643600054026" duration="197000" />
+      <workItem from="1643600278550" duration="599000" />
+      <workItem from="1643626300492" duration="721000" />
+      <workItem from="1643627678587" duration="494000" />
     </task>
     <task id="LOCAL-00001" summary="dashboard-scheduler update">
       <created>1641528542634</created>
