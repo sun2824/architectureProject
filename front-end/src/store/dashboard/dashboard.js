@@ -15,6 +15,7 @@ function weeklyCustomerCnt(commit, data) {
     let twentyDatas = Array();
 
     data['20'].forEach(item => {
+
         Object.keys(item).forEach(key => {
             twentyLabel.push(key);
             twentyDatas.push(item[key]);
@@ -227,9 +228,7 @@ export default {
 
                     payload.pageUrl = '/dashboard';
 
-                    console.log(data);
-
-                    commit;
+                    weeklyCustomerCnt(commit, data[0]);
                 }
             );
         }
