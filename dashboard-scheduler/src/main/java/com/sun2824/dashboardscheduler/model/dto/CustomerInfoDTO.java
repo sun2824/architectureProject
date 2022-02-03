@@ -1,4 +1,4 @@
-package com.sun2824.dashboardscheduler.dto.common;
+package com.sun2824.dashboardscheduler.model.dto;
 
 import lombok.Data;
 

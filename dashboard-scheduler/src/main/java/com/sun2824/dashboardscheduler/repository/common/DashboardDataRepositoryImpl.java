@@ -9,8 +9,8 @@ import com.querydsl.core.types.dsl.Expressions;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.sun2824.dashboardscheduler.domain.common.QCustomerInfo;
 import com.sun2824.dashboardscheduler.domain.common.QPurchaseTable;
-import com.sun2824.dashboardscheduler.dto.common.CustomerInfoDTO;
-import com.sun2824.dashboardscheduler.dto.common.PurchaseTableDTO;
+import com.sun2824.dashboardscheduler.model.dto.CustomerInfoDTO;
+import com.sun2824.dashboardscheduler.model.dto.PurchaseTableDTO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

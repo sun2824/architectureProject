@@ -6,7 +6,7 @@ import com.querydsl.core.types.dsl.Expressions;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.sun2824.dashboardscheduler.domain.common.QCustomerInfo;
 import com.sun2824.dashboardscheduler.domain.common.QPurchaseTable;
-import com.sun2824.dashboardscheduler.dto.common.CustomerInfoDTO;
+import com.sun2824.dashboardscheduler.model.dto.CustomerInfoDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
