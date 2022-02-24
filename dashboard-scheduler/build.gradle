@@ -71,6 +71,27 @@ sourceSets {
     }
 }
 
+task generateQueryDSL(type: JavaCompile, group: 'build') {
+    doFirst {
+        delete queryDslOutput
+        queryDslOutput.mkdirs()
+    }
+    source = sourceSets.main.java
+    classpath = configurations.compile
+    destinationDir = queryDslOutput
+    options.compilerArgs = [
+            '-proc:only',
+            '-processor',
+            'com.querydsl.apt.jpa.JPAAnnotationProcessor'
+    ]
+}
+compileJava.dependsOn(generateQueryDSL)
+
+/** clean 태스크 실행시 QClass 삭제 */
+clean {
+    delete queryDslOutput
+}
+
 configurations {
     querydsl.extendsFrom compileClasspath
 }

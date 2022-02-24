@@ -19,7 +19,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCustom {
+public class DashboardDataQueryDslSupport {
     private EntityManager em;
     private JPAQueryFactory queryFactory;
 
@@ -33,8 +33,6 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
         this.queryFactory = new JPAQueryFactory(em);
     }
 
-
-    @Override
     public JsonObject weekCustomerInfo() {
 
         JsonObject customerInfoMap = new JsonObject();
@@ -77,7 +75,6 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
         return customerInfoMap;
     }
 
-    @Override
     public JsonArray dailyCustomerGrade() {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -102,7 +99,6 @@ public class DashboardDataRepositoryImpl implements DashboardDataRepositoryCusto
         return jsonArray;
     }
 
-    @Override
     public JsonArray dailyGradePurchasePrice() {
         String[] strList = {"Bronze", "Silver", "Gold", "Platinum", "Diamond"};
 

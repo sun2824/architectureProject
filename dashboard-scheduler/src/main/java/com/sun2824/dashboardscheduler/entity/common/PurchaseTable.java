@@ -1,4 +1,4 @@
-package com.sun2824.dashboardscheduler.domain.common;
+package com.sun2824.dashboardscheduler.entity.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,13 +14,16 @@ import javax.persistence.Table;
 @Entity
 @Table
 @Data
-public class CustomerInfo {
+public class PurchaseTable {
     @Id
+    String uuid;
+
+    @Column
     String customerId;
+
     @Column
-    String grade;
-    @Column
-    String age;
+    Integer price;
+
     @Column
     String createdAt;
 }

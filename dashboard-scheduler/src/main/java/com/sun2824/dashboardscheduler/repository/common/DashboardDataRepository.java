@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DashboardDataRepository extends JpaRepository<DashboardData, String>, DashboardDataRepositoryCustom {
+public interface DashboardDataRepository extends JpaRepository<DashboardData, String> {
 }

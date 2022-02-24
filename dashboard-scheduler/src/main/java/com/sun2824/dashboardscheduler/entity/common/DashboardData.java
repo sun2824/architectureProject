@@ -1,4 +1,4 @@
-package com.sun2824.dashboardscheduler.domain.common;
+package com.sun2824.dashboardscheduler.entity.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

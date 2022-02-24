@@ -1,4 +1,4 @@
-package com.sun2824.dashboardscheduler.model.dto;
+package com.sun2824.dashboardscheduler.entity.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,22 +8,20 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.io.Serializable;
 
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table
+@Table(name="customer_info")
 @Data
-public class DashboardDataDTO implements Serializable {
+public class CustomerInfoEntity {
     @Id
-    String uuid;
+    String customerId;
     @Column
-    String userId;
+    String grade;
     @Column
-    String deletedAt;
+    String age;
     @Column
-    String userEml;
-    @Column
-    String userPwd;
+    String createdAt;
 }
